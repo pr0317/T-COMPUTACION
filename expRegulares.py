@@ -1,5 +1,17 @@
+from cgitb import text
 import re
 import string
+from textwrap import fill
+import tkinter
+
+ventana = tkinter.Tk()
+ventana.geometry("400x400")
+etiqueta = tkinter.Label(ventana, text = "Identificador de datos", bg = "yellow")
+etiqueta.pack(fill = tkinter.BOTH, expand = 1)
+
+
+ventana.mainloop()
+
 
 ##!expresiones regulares para verificación de:
 ##1.1. entero
